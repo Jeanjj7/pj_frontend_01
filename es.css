@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap ');
 :root{
     --azul_claro: rgb(0, 172, 230);
     --amarelo_canário: rgb(255, 187, 0);
@@ -7,28 +8,110 @@
     --vermelho: rgb(255, 0, 0);
 }
 #menu_topo{
-    width: 100%;
     height: 90px;
     background-color: var(--azul_claro);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 body{
     margin: 0px;
+    font-family:'Marhey';
+    background-image: url(imagem/nuvem.png);
 }
 #caixa_menus{
     display: flex;
     color: var(--branco);
     
+    
 }
 .item_menu{
     margin-right: 30px;
-    background-color: var(--vermelho);
+    /* background-color: var(--vermelho); */
     display: flex;
     align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 40px 0px 40px 40px;
+    height: 90px;
 
     
+}
+.item_menu:hover{
+    background-color: var(--amarelo_canário);
+    
+}
+.menu_ativado{
+    background-color: var(--vermelho);
+}
+
+#banner{
+    width: 100%;
+    height: 40vw;
+    background-image: url(imagem/criancas.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mens{
+    background-color: rgb(0, 172, 230, 0.6); /*cor de fundo*/
+    color: var(--branco); /*cor*/
+    width: 800px; /*largura*/
+    height: 400px; /*altura*/
+    text-align: center;
+    text-shadow: 0 0 10px cyan,
+                0 0 20px cyan,
+                0 0 40px cyan,
+                0 0 80px cyan; 
+    padding: 43px;
+    border-radius: 70px 20px 70px 20px;            
+
+}
+
+#mens h1{
+    font-size: 70px;
+    line-height: 70px;
+
+
+}
+#mens p{
+    font-size: 30px;
+    line-height: 27px;
+}
+
+#conteiner{
+    text-align: center;
+}
+
+#sc_01{
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+}
+#criancas_01{
+    background-image: url(imagem/criancas2.jpg);
+    width: 450px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 40px 10px 40px 10px;    
+
+}
+#conteudo_01{
+    width: 700px;
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+#conteudo_01 h1{
+    font-size: 40px;
+    background: linear-gradient(90deg, #4a03ff,#d009e7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
