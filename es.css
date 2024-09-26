@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap ');
+@import url('https://cdn-uicons.flaticon.com/2.5.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.5.0/uicons-brands/css/uicons-brands.css');
+
 :root{
     --azul_claro: rgb(0, 172, 230);
     --amarelo_canário: rgb(255, 187, 0);
@@ -63,10 +66,6 @@ body{
     width: 800px; /*largura*/
     height: 400px; /*altura*/
     text-align: center;
-    text-shadow: 0 0 10px cyan,
-                0 0 20px cyan,
-                0 0 40px cyan,
-                0 0 80px cyan; 
     padding: 43px;
     border-radius: 70px 20px 70px 20px;            
 
@@ -75,7 +74,11 @@ body{
 #mens h1{
     font-size: 70px;
     line-height: 70px;
-
+    text-shadow: 0 0 10px cyan,
+                0 0 20px cyan,
+                0 0 40px cyan,
+                0 0 80px cyan; 
+                
 
 }
 #mens p{
@@ -87,10 +90,13 @@ body{
     text-align: center;
 }
 
-#sc_01{
+#sc_01, #sc_02{
     display: flex;
     width: 80%;
     margin: auto;
+    margin-top: 80px;
+
+  
 
 }
 #criancas_01{
@@ -114,4 +120,115 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+/**/
+#criancas_02{
+    width: 60%;
+    height: 350px;
+    background-image: url(imagem/criancas3.jpg);
+    background-size: cover;
+    border-radius: 40px 0px 0px 40px;    
+
+}
+#conteudo_02{
+    background-color: var(--verde_limão);
+    width: 40%;
+    border-radius: 0px 40px 40px 0px;  
+    color: var(--branco);
+    text-align: left;
+}
+
+#conteudo_02 h1{
+    background: linear-gradient(90deg, #3808f7,#eb04bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+#conteudo_02 p{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#rp{
+    background-color: var(--azul_claro);
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;/*quebra linha e vai para baixo*/
+    padding-bottom: 50px;
+}
+
+.crp{
+    width: 33%;
+    height: 500px;
+    color: var(--branco);
+    text-align: left;
+
+}
+.icones{
+    font-size: 40px;
+    margin-right: 10px;
+}
+#cl3 img{
+    width: 400px;
+}
+#cl2 i{
+    margin-left: 60px;
+}
+#cl1 h1{
+    margin-top: -17px;
+    background: linear-gradient(90deg, #3808f7,#eb04bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#copyight{
+    min-width: 100%;
+    color: var(--branco);
+
+
+}
+#copyight a{
+    color: var(--branco);
+    text-shadow: 0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan,
+    0 0 80px cyan; 
+    text-decoration: none;
+}
+
+#menu_mt{
+    background-color: red;
+    height: 70px;
+    display: none;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    font-size: 30px;
+    color: var(--branco);
+}
+
+/*celular*/
+@media screen and (max-width: 480px){
+    #menu_mt{
+        display: flex;
+    }
+    #menu_topo{
+        display: none;
+    }
+}
+/*tablet*/
+@media screen and (min-width:481px) and (max-width: 1024px) {
+    #menu_mt{
+        display: flex;
+    }
 }
