@@ -10,11 +10,23 @@
 
 <body>
     <div id="conteiner">
+
+        <div id="menu_lt">
+            <h1 onclick="fcmenu()"><i class="fi fi-sr-angle-right"></i></h1> <!-- abre e fecha -->
+            <div class="item_menu menu_ativado">Home</div>
+            <div class="item_menu">Serviços</div>
+            <div class="item_menu">Sobre Nós</div>
+            <div class="item_menu">Nosso Time</div>
+            <div class="item_menu">Contato</div>
+        </div>
+
         <div id="menu_mt">
-            <i class="fi fi-sr-menu-burger"></i>
+            <i class="fi fi-sr-menu-burger" onclick="abmenu()"></i> <!-- abre e fecha -->
 
         </div>
-        
+
+       
+
         <div id="menu_topo">
             <img src="imagem/logomarca_branca.png" height="70">
             <div id="caixa_menus">
@@ -99,6 +111,19 @@
         </div>
 
     </div>
+
+    <script>
+        function abmenu() {
+            var minhaDiv = document.getElementById("menu_lt");
+            minhaDiv.classList.add("aparecer");
+
+        }
+        function fcmenu() {
+            var minhaDiv = document.getElementById("menu_lt");
+            minhaDiv.classList.remove("aparecer");
+
+        }
+    </script>
 
 
 </body>

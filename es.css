@@ -2,6 +2,7 @@
 @import url('https://cdn-uicons.flaticon.com/2.5.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/2.5.0/uicons-brands/css/uicons-brands.css');
 
+
 :root{
     --azul_claro: rgb(0, 172, 230);
     --amarelo_canário: rgb(255, 187, 0);
@@ -207,7 +208,7 @@ body{
 }
 
 #menu_mt{
-    background-color: red;
+    background-color: var(--azul_claro);
     height: 70px;
     display: none;
     align-items: center;
@@ -217,18 +218,193 @@ body{
     color: var(--branco);
 }
 
+/*abrir e fecha menu*/
+#menu_lt{
+    background-color: var(--azul_claro);
+    width: 250px;
+    margin-left: -400px;
+    height: 100vh;/*vh mede a autura maxima do site*/
+    position: fixed;
+    box-shadow: 8px 0px 10px black;/*efeito sonbra*/
+    transition: all 0.4s;/*tranzisão*/
+}
+.aparecer{
+    margin-left: 0px !important;
+
+}
+/*abrir e fecha menu*/
+
+#menu_lt h1{
+    font-family: Arial;
+    color: var(--branco);
+
+    width: 25px;
+    margin-left: 200px;
+
+}
+
+#menu_lt .item_menu{
+    color: var(--branco);
+    width: 100px;
+    text-align: center;/**/
+    justify-content: center;/**/
+    margin-left: 40px;/**/
+    margin-bottom: 10px;/**/
+
+}
+
+
 /*celular*/
 @media screen and (max-width: 480px){
+    /*menu*/
     #menu_mt{
         display: flex;
     }
     #menu_topo{
         display: none;
     }
+    #mens{
+        padding: 5px;
+        width: 80%;
+        height: 130px;
+    }
+    #mens h1{
+        font-size: 20px;
+        line-height: 15px;
+    }
+    #mens p{
+        font-size: 10px;
+    }
+    /**/
+    /*sc*/
+    #sc_01{
+        flex-direction: column;
+    }
+    #criancas_01{
+        margin: auto;
+        width: 300px;
+        height: 200px;
+    }
+
+    #conteudo_01{
+        width: 300px;
+        padding-left: 0px;
+    }
+
+    #conteudo_01 h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    /**/
+    /**/
+    #sc_02{
+        flex-direction: column;
+    }
+    #criancas_02{
+        width: 300px;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+    #conteudo_02{
+        width: 300px;
+        border-radius: 0px 0px 20px 20px;
+
+    }
+    /**/
+    #rp{
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+
+
+    }
+    #cl1, #cl2, #cl3{
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+    #cl2 i{
+        margin-left: 0px;
+    }
+    #cl3 img{
+        display: none;
+
+    }
+    /**/
+
 }
 /*tablet*/
 @media screen and (min-width:481px) and (max-width: 1024px) {
+    /**/
+    #rp{
+        flex-direction: column;
+
+    }
+    #cl1, #cl2, #cl3{
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+    #cl2 i{
+
+        margin-left: 0px;
+    }
+    #cl3 img{
+        display: none;
+
+    }
+    /**/
+    /**/
+    #sc_02{
+        flex-direction: column;
+    }
+    #criancas_02{
+        width: 450px;
+        height: 250px;
+        border-radius: 40px 40px 0px 0px;
+        margin-left: 15%;
+    }
+    #conteudo_02{
+        width: 450px;
+        border-radius: 0px 0px 40px 40px;
+        padding-bottom: 50px;
+        margin-left: 15%;
+    }
+    /**/
+    /**/
+    #sc_01{
+        flex-direction: column;
+    }
+    #criancas_01{
+        margin: auto;
+        margin-left: 15%;
+    }
+
+    #conteudo_01{
+        width: 450px;
+        margin-left: 15%;
+    }
+    /**/
+    /**/
     #menu_mt{
         display: flex;
     }
+    #menu_topo{
+        display: none;
+    }
+    #mens{
+        padding: 20px; 
+        width: 60%;
+        height: 250px;
+    }
+    #mens h1{
+        font-size: 40px;
+    }
+    #mens p{
+        font-size: 25px;
+    
+    }
+    /**/
 }
